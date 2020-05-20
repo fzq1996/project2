@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <style>
+        input[type="search"]{
+            -webkit-appearance:none;
+            border: 1px solid #999;
+            width: 304px;
+            height: 31px;
+            padding: 1px 0;
+        } 
+        input {
+            width: 300px;
+            height: 25px;
+        }
+        span {
+            color: 	#DC143C;
+        }
+        .box {
+            border: 1px solid #333;
+            width: 500px;
+            padding: 20px 90px;
+            box-sizing: border-box;
+            position: relative;
+            margin-top: 20px;
+        }
+        .box_title {
+            position: absolute;
+            top: -10px;
+            left: 10px;
+            background-color: #fff;
+            padding: 0 5px;
+            color: #DC143C;
+        }
+        .title1 {
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="title1">学生信息</div>
+    <div class="box">
+        <div class="box_title">学生档案</div>
+        <form action="">
+            <div class="item">姓名：</div>
+            <input type="text" placeholder="请输入姓名" required><span>*</span>
+            <div class="item">学号：</div>
+            <input type="text" placeholder="请输入学号" required><span>*</span>
+
+            <div class="item">手机号码：</div>
+            <input type="text" placeholder="请输入手机号" required><span>*</span>
+
+            <div class="item">邮箱地址：</div>
+            <input type="text" placeholder="请输入邮箱地址" required><span>*</span>
+
+            <div class="item">录取学校：</div>
+            
+                <input type="search" list="school">
+                <datalist id="school">
+                    <option value="河北师范大学">
+                    <option value="河北金融大学">
+                    <option value="河北农业大学">
+                </datalist>
+            
+            
+            <div class="item">入学成绩：</div>
+            <input type="text">
+
+            <div class="item">入学时间：</div>
+            <input type="date">
+            <button>提交</button>
+        </form>
+    </div>
+</body>
+</html>
